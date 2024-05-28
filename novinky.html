@@ -1,0 +1,19 @@
+---
+layout: main-template.njk
+title: Novinky
+---
+
+<section class="rooms">
+	<h1>Novinky</h1>
+
+	{% for post in admin.collections.novinky %}
+
+	<div class="room">
+		<div class="room__description">
+			<h2>{{post.data.title}}</h2>
+		</div>
+	</div>
+
+	{% endfor %}
+
+</section>
