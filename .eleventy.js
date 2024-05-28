@@ -4,6 +4,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("images");
     // Zkopírovat css/ to _site/css/
     eleventyConfig.addPassthroughCopy("css");
+     // admin složka pro Netlify CMS
+    eleventyConfig.addPassthroughCopy("admin");
 
     return {
         // možné formáty šablon
