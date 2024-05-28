@@ -9,7 +9,7 @@ collections:
     create: true # Uživatel může přidávat nové stránky/příspěvky (nebo false, pokud nemůže)
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Šablona jmen souborů, např. YYYY-MM-DD-title.md
     fields: # Pole, která budeme editovat. Obvykle data uložená ve front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "hlavni"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "main-template.njk"}
       - {label: "Tags", name: "tags", widget: "hidden", default: "novinky"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
